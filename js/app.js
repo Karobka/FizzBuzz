@@ -1,13 +1,13 @@
 $(document).ready(function() {
-  'use strict'
+
 
 var userNumber=prompt("Give us a number precious and we plays us a game!");
 
 preciousGame(userNumber);
  
 function preciousGame(theNumber) {
-  theNumber= +theNumber;
-  if(theNumber != NaN) {
+  //theNumber= +theNumber;
+  if(theNumber === NaN) {
     alert("Just numbers, not letters precious.");
   }else if(theNumber % 1 !== 0){
     alert("We hates decimals precious, yes, we hates them. Take them out!");
